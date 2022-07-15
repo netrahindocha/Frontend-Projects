@@ -4,6 +4,10 @@
     font-family: 'Baloo Bhai 2', cursive;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     background-color: orange;
     display: flex;
@@ -11,22 +15,25 @@
     position: fixed;
 }
 
-#logo{
+#jc-investments a{
     /* border: 2px solid black; */
-    margin: 0px 100px;
-    color: white;
-    padding: 15px 20px;
-    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#jc-investments{
+    margin: 0px 50px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 25px;
 }
 
-#logo:hover{
+#jc-investments:hover{
     cursor: pointer;
 }
 
-
 .navbox ul{
     display: flex;
-    padding: 15px 60px;  
+    padding: 12px 15px;  
     margin-left: 320px;  
 }
 
@@ -37,7 +44,7 @@
 .navbox ul li a{
     text-decoration: none;
     color: white;
-    padding: 15px 20px;
+    padding: 16px 20px;
     font-size: 20px;
 }
 
@@ -51,7 +58,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 100px;
+    padding-bottom: 100px;
+    background-color: orange;
+}
+
+#logo{
+    padding-top: 80px;
+    padding-left: 110px;
     background-color: orange;
 }
 
@@ -129,26 +142,31 @@ p{
 }
 
 #get-in-touch{
-    width: 15%;
+    width: fit-content;
     font-size: 21px;
     margin-top: 20px;
-    background-color: white;
-    border-color: rgb(194, 193, 193);
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 5px;
+    background-color: orange;
+    /* font-weight: bold; */
 }
 
 #get-in-touch:hover{
     cursor: pointer;
     background-color: rgb(233, 233, 233);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .chart{
     margin-left: 50px;
+    margin-top: 50px;
 }
 
 .earth{
     float: left;
+    position: relative;
+    top: 80px;
 }
 
 .right-align{
@@ -161,6 +179,14 @@ p{
     display: flex;
     background-color: rgb(233, 233, 233);
     padding: 50px;
+    margin-top: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.our-values{
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 /* Services Section */
@@ -169,9 +195,20 @@ p{
     /* padding: 50px; */
 }
 
+.services-title{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+.services-header{
+    padding-bottom: 90px;
+    font-size: 21px;
+}
+
 .heading-services{
     text-align: center;
-    padding-bottom: 90px;
+    /* padding-bottom: 90px; */
 }
 
 .grid{
@@ -221,7 +258,6 @@ p{
 
 .center{
     text-align: center;
-    display: inline-block;
 }
 
 .contact-title{
@@ -247,17 +283,6 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
-
-.icons{
-    padding: 8px;
-    margin: 10px;
-    margin-bottom: 50px;
-}
-
-.icons:hover{
-    cursor: pointer;
 }
 
 .contact-form input[type='text']{
@@ -294,15 +319,14 @@ textarea{
     width: 5%;
     padding: 5px;
     margin-bottom: 50px;
-    background-color: white;
+    background-color: orange;
     font-size: 20px;
     border-radius: 10px;
 }
 
 .contact-form input[type='submit']:hover{
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(166, 165, 165);
     cursor: pointer;
-    font-weight: bold;
 }
 
 .contact-info{
@@ -313,6 +337,27 @@ textarea{
     padding: 20px;
     padding-top: 50px;
     width: 100%;
+}
+
+.email, .call{
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.facebook, .linkedin, .insta{
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.email:hover, .call:hover, .linkedin:hover, .insta:hover, .facebook:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* Portfolio Section */
@@ -331,33 +376,34 @@ textarea{
 .portfolio-header{
     font-size: 21px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .paris{
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    margin: 50px;
-    border: 2px solid black;
-    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid black; */
+    /* background-color: white; */
 }
 
 .new-york{
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    margin: 50px;
-    border: 2px solid black;
-    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid black; */
+    /* background-color: white; */
 }
 
 .san-francisco{
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    margin: 50px;
-    border: 2px solid black;
-    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid black; */
+    /* background-color: white; */
 }
 
 .flex-portfolio{
@@ -404,6 +450,102 @@ textarea{
     font-size: 21px;
     padding-bottom: 50px;
 }
+
+.basic{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-left: 30px;
+    width: 30%;
+}
+
+.basic:hover{
+    box-shadow: 7px 7px 30px grey;
+}
+
+.pro{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 30%;
+}
+
+.pro:hover{
+    box-shadow: 7px 7px 30px grey;
+}
+
+.premium{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-right: 30px;
+    width: 30%;
+}
+
+.premium:hover{
+    box-shadow: 7px 7px 30px grey;
+}
+
+.flex-pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pricing-types{
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.pricing-content{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.pricing-benefits{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.top{
+    padding-top: 20px;
+}
+
+.bottom{
+    padding-bottom: 20px;
+}
+
+.cost{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.sign-up{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 8px;
+    border: 2px solid black;
+    background-color: orange;
+    font-size: 21px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.sign-up:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+
 
 
 
